@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'acelerometro',
+    loadChildren: () => import('./acelerometro/acelerometro.module').then( m => m.AcelerometroPageModule)
+  },
+  {
+    path: 'gps',
+    loadChildren: () => import('./gps/gps.module').then( m => m.GpsPageModule)
+  },
+  {
+    path: 'giroscopio',
+    loadChildren: () => import('./giroscopio/giroscopio.module').then( m => m.GiroscopioPageModule)
+  },
 ];
 
 @NgModule({

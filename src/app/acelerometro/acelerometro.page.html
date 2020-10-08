@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>acelerometro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-input
+      placeholder="Teu numero"
+      type="number"
+      text-right
+      [(ngModel)]="var1"
+    ></ion-input>
+    <ion-input
+      placeholder="Teu numero"
+      type="number"
+      text-right
+      [(ngModel)]="acumulado"
+    ></ion-input>
+    <ion-button color="primary" (click)="usarService(var1)" expand="full"
+      >Primary</ion-button
+    >
+
+    <p>Leitura dos dados do Acelerometro</p>
+
+    <div full>
+      <h1>X: {{x}}</h1>
+    </div>
+    <div full>
+      <h1>Y: {{y}}</h1>
+    </div>
+    <div>
+      <h1>Z: {{z}}</h1>
+    </div>
+
+    <ion-button color="primary" expand="full" (click)="start()"
+      >Iniciar</ion-button
+    >
+    <ion-button color="primary" expand="full" (click)="stop()"
+      >Parar</ion-button
+    >
+  </div>
+</ion-content>

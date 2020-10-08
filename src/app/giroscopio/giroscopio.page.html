@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>giroscopio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="content">
+    <ion-input
+      placeholder="Teu numero"
+      type="number"
+      text-right
+      [(ngModel)]="var1"
+    ></ion-input>
+    <ion-input
+      placeholder="Teu numero"
+      type="number"
+      text-right
+      [(ngModel)]="acumulado"
+    ></ion-input>
+    <ion-button color="primary" (click)="usarService(var1)" expand="full"
+      >Primary</ion-button
+    >
+  </div>
+</ion-content>
